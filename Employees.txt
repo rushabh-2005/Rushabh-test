@@ -1,0 +1,33 @@
+CREATE TABLE employees
+(
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    emp_name VARCHAR(60),
+    department VARCHAR(60),
+    salary INT,
+    joining_date DATE
+)
+
+INSERT INTO employees(emp_name, department, salary, joining_date) VALUES ('Amit', 'IT', 50000, '2023-01-15');
+
+INSERT INTO employees(emp_name, department, salary, joining_date) VALUES ('Neha', 'HR', 40000, '2022-11-10');
+
+INSERT INTO employees(emp_name, department, salary, joining_date) VALUES ('Rahul', 'IT', 60000, '2021-06-01');
+
+INSERT INTO employees(emp_name, department, salary, joining_date) VALUES ('Pooja', 'Finance', 45000, '2023-03-20');
+
+INSERT INTO employees(emp_name, department, salary, joining_date) VALUES ('Suresh', 'IT', 55000, '2022-08-05');
+
+SELECT emp_name 
+FROM employees
+WHERE department = 'IT'; 
+
+SELECT emp_name 
+FROM employees
+WHERE salary > 50000; 
+
+SELECT emp_name
+FROM employees
+WHERE joining_date < '2023-01-01';
+
+
+
